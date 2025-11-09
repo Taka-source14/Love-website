@@ -29,5 +29,3 @@ NOT: `BOT_TOKEN` ve `CHAT_ID` güvenlidir; public repoya koymayın.
 Telegram chat_id öğrenme yolları:
 - Bot ile mesajlaştıktan sonra `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates` çağrısı yaparak en son mesajlardan chat_id'yi görebilirsiniz.
 
-Geliştirme notları:
-- İstersen TypeScript kullanarak frontend/backendi yeniden yazabilirim. Ayrıca form doğrulamayı ve rate-limit/anti-spam kontrollerini sunucuya eklemeyi öneririm.
