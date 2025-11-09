@@ -6,6 +6,7 @@ const path = require('path');
 const helmet = require('helmet');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -47,8 +48,8 @@ app.post('/submit', async (req, res) => {
     console.warn('Eksik instagram:', req.body);
     return res.status(400).json({ ok: false, error: 'instagram required' });
   }
-  const BOT_TOKEN = "7498365522:AAFbxNqqtQyvUdQmBWZaYQgaM8453OZ1EQM";
-  const CHAT_ID = "5632934341";
+  const BOT_TOKEN = process.env.BOT_TOKEN;
+  const CHAT_ID = process.env.CHAT_ID;
   const entry = { instagram, phone: phone || '-', userMessage: userMessage || '', ts: new Date().toISOString() };
   // Terminale gelen verileri yaz
   console.log('Yeni form gönderimi:', entry);
@@ -85,3 +86,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`);
 });
+
+// BOT_TOKEN ve CHAT_ID'nin tanımlı olup olmadığını kontrol et
+if (!BOT_TOKEN || !CHAT_ID) {
+  console.error("Missing BOT_TOKEN or CHAT_ID. Set them in .env or hosting env vars.");
+}
