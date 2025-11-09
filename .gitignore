@@ -18,3 +18,5 @@ Thumbs.db
 # Geçici dosyalar
 *.tmp
 *.temp
+
+submissions.json
