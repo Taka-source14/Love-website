@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Love | AŞK</title>
+    <meta name="description" content="Kısa bir soruyla başlayan romantik deneyim 💖">
+    <meta property="og:title" content="Love">
+    <meta property="og:description" content="Kısa bir soruyla başlayan romantik deneyim 💖">
+    <meta property="og:image" content="/og-cover.jpg">
+    <meta property="og:site_name" content="Mini Anket">
+    <link rel="icon" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero" id="main-grid">
+      <div class="overlay"></div>
+      <div class="center-card" id="view-1">
+        <h1>Merhaba</h1>
+        <p class="subtitle">Farklı Hisler Farklı Karşılama İster.</p>
+
+        <div class="question">
+          <p class="q-title">Bu adımdan sonra işler senin cevaplarına göre ilerleyecek ☺️<br>Sevgilin Var mı?</p>
+          <div class="btn-row">
+            <button class="btn btn-yes" id="q1-yes">EVET</button>
+            <button class="btn btn-no" id="q1-no">HAYIR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-card hidden" id="view-2">
+        <h2>İkinci Soru</h2>
+        <p class="q-title">Sen bir ilişki ister misin?</p>
+        <div class="btn-row">
+          <button class="btn btn-yes" id="q2-yes">EVET</button>
+          <button class="btn btn-no" id="q2-no">HAYIR</button>
+        </div>
+      </div>
+
+      <!-- slide panels -->
+      <div id="slide-right" class="slide-panel right hidden">
+        <form id="contact-form">
+          <h3>Biraz bilgi ver</h3>
+          <label for="phone">Telefon (isteğe bağlı)</label>
+          <input type="text" id="phone" name="phone" inputmode="numeric" maxlength="14" placeholder="05xx xxx xx xx" />
+          <label for="instagram">Instagram kullanıcı adı</label>
+          <input type="text" id="instagram" name="instagram" placeholder="ornek_instagram" required />
+          <label for="user-message">Eğer mesajınız varsa (isteğe bağlı)</label>
+          <textarea id="user-message" name="user-message" placeholder="Bir mesaj bırakmak ister misin?" rows="2" style="resize:vertical;"></textarea>
+          <button class="btn" type="submit">Gönder</button>
+        </form>
+      </div>
+
+      <div id="slide-left" class="slide-panel left hidden">
+        <div class="note">NOT: Bazen güzel şeyler hiç hazır olmadığın anda ortaya çıkar</div>
+      </div>
+    </main>
+
+    <div id="toast" aria-live="polite" style="position:fixed;left:50%;bottom:32px;transform:translateX(-50%);z-index:9999;min-width:200px;max-width:90vw;display:none;padding:14px 24px;background:#222;color:#fff;border-radius:8px;text-align:center;font-size:16px;box-shadow:0 4px 24px rgba(0,0,0,0.18);opacity:0;transition:opacity .3s;pointer-events:none"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+[
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "ts": "2025-11-07T07:56:26.310Z"
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "ts": "2025-11-07T08:43:53.019Z",
+    "delivered": true
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "userMessage": "MERHABA TATLI ŞEY",
+    "ts": "2025-11-07T08:48:09.972Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "userMessage": "",
+    "ts": "2025-11-07T08:48:27.113Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "userMessage": "",
+    "ts": "2025-11-07T08:52:01.001Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "asdasd",
+    "userMessage": "sadsad",
+    "ts": "2025-11-07T08:53:39.035Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555",
+    "userMessage": "asd",
+    "ts": "2025-11-07T08:58:43.866Z",
+    "delivered": true
+  },
+  {
+    "instagram": "emre123",
+    "phone": "0555555555555555555555555555555555",
+    "userMessage": "asd",
+    "ts": "2025-11-07T08:59:23.032Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555555555",
+    "userMessage": "Merhaba",
+    "ts": "2025-11-09T08:05:13.222Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdfaxa",
+    "ts": "2025-11-09T09:43:45.874Z"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "czxv",
+    "ts": "2025-11-09T09:46:37.042Z"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "czxv",
+    "ts": "2025-11-09T09:46:42.609Z"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdfg",
+    "ts": "2025-11-09T09:49:16.177Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdfg",
+    "ts": "2025-11-09T09:49:16.330Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdfg",
+    "ts": "2025-11-09T09:49:14.969Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdfg",
+    "ts": "2025-11-09T09:49:16.608Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdfg",
+    "ts": "2025-11-09T09:49:16.464Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "gasdgfd",
+    "ts": "2025-11-09T09:51:20.546Z",
+    "delivered": false,
+    "error": "Request failed with status code 401"
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdasfgewaqe",
+    "ts": "2025-11-09T09:54:12.057Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asgt",
+    "ts": "2025-11-09T09:56:50.537Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "ask",
+    "ts": "2025-11-09T09:58:48.784Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "agf",
+    "ts": "2025-11-09T10:01:21.265Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdf",
+    "ts": "2025-11-09T10:02:52.802Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "lenm",
+    "ts": "2025-11-09T10:03:34.081Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdfawe",
+    "ts": "2025-11-09T10:04:01.455Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdasfwqq13e23",
+    "ts": "2025-11-09T10:05:35.393Z",
+    "delivered": true
+  },
+  {
+    "instagram": "asdsad",
+    "phone": "0555 555 55 5",
+    "userMessage": "asdf3w234",
+    "ts": "2025-11-09T10:12:43.364Z",
+    "delivered": true
+  },
+  {
+    "instagram": "123",
+    "phone": "123",
+    "userMessage": "213",
+    "ts": "2025-11-09T10:14:53.272Z",
+    "delivered": true
+  },
+  {
+    "instagram": "22",
+    "phone": "222",
+    "userMessage": "22",
+    "ts": "2025-11-09T10:15:57.162Z",
+    "delivered": true
+  },
+  {
+    "instagram": "111",
+    "phone": "111",
+    "userMessage": "111",
+    "ts": "2025-11-09T10:17:29.815Z",
+    "delivered": true
+  },
+  {
+    "instagram": "555",
+    "phone": "555",
+    "userMessage": "555",
+    "ts": "2025-11-09T10:20:10.246Z",
+    "delivered": true
+  },
+  {
+    "instagram": "666",
+    "phone": "666",
+    "userMessage": "666",
+    "ts": "2025-11-09T10:20:35.992Z",
+    "delivered": true
+  },
+  {
+    "instagram": ".",
+    "phone": "-",
+    "userMessage": ".",
+    "ts": "2025-11-09T17:24:58.937Z",
+    "delivered": true
+  }
+]

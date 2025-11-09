@@ -1,0 +1,151 @@
+Süper—Cursor’a **tek tek yapıştırabileceğin** net prompt’ları aşağıya bıraktım. Her birini ayrı “task” olarak kullanabilirsin. İçindeki `{{...}}` yerlerini kendine göre değiştir.
+
+---
+
+# 1) Yerleşim (responsive grid)
+
+**Prompt (Cursor’a yapıştır):**
+
+> Project files: `index.html`, `styles.css`.
+> Goal: Ana gövdeyi CSS grid’e geçir. Masaüstünde düzen: **kart (1fr) | form (360px)**; 1024px altı tek kolon ve form kartın **altına** insin. Kenar boşluğu 16–24px, sütun aralığı 24–32px.
+> Acceptance: 1280px’te kart solda form sağda; 390px’te kart üstte form altta; yatay scroll yok. Hiçbir mevcut içerik kaybolmasın.
+
+---
+
+# 2) Buton hiyerarşisi ve etkileşim
+
+**Prompt:**
+
+> Files: `styles.css`.
+> Make `EVET` primary (pembe #ff4d7e, beyaz yazı), `HAYIR` secondary (açık gri).
+> Add hover (hafif yükselme + gölge) ve `:focus-visible` (net outline).
+> Acceptance: Hover’da 1–2px yükselme + yumuşak gölge; klavye odağı belirgin; kontrast WCAG AA.
+
+---
+
+# 3) Form doğrulama + tek tık + toast
+
+**Prompt:**
+
+> Files: `index.html`, `app.js`, `styles.css`.
+> Form id: `#info-form`. `instagram` zorunlu.
+> Submit’te buton “Gönderiliyor…” metniyle kilitlensin; istek bitince eski haline dönsün.
+> Başarı/hata için alt-ortada 2s’lik toast göster.
+> Acceptance: instagram boşsa gönderme; çift tıklamada tek istek; başarıda toast görünür.
+
+---
+
+# 5) Kart geçişi (mikro animasyon)
+
+**Prompt:**
+
+> Files: `styles.css`.
+> Soru kartı görünürken 180–200ms `ease-out` ile `opacity:0→1` ve `scale:.98→1` animasyonu uygula.
+> Acceptance: İlk açılışta yumuşak giriş; performans sorunu yok; prefer-reduced-motion’a saygı.
+
+---
+
+# 6) Arka plan okunaklılığı (overlay)
+
+**Prompt:**
+
+> Files: `styles.css`.
+> Arka planın üstüne pseudo-element ile %25–40 koyu overlay ekle (`.overlay::after`). Overlay tıklama almayacak.
+> Acceptance: Her arka planda metin rahat okunur; overlay etkileşimi engellemez.
+
+---
+
+# 7) Tipografi ve satır genişliği
+
+**Prompt:**
+
+> Files: `styles.css`.
+> Başlık font-size: `clamp(32px, 4vw, 56px)`; alt metin/lead: `clamp(16px, 2vw, 18px)`.
+> Metin bloklarına `max-width:60ch`, letter-spacing `-0.02em`.
+> Acceptance: Farklı ekranlarda dengeli tipografi; satırlar ~60–70 karakter.
+
+---
+
+# 8) Erişilebilirlik (A11y)
+
+**Prompt:**
+
+> Files: `index.html`, `app.js`, `styles.css`.
+> Form etiketlerini `for/id` ile bağla; toast için `aria-live="polite"`; ana CTA’lar klavyeyle erişilebilir (`Enter/Space`).
+> Acceptance: Tam klavye navigasyonu; SR (screen reader) alan isimlerini doğru okur; focus ringler görünür.
+
+---
+
+# 9) Güvenlik + performans (backend)
+
+**Prompt:**
+
+> Files: `server.js`.
+> Add packages and wire: `helmet({contentSecurityPolicy:false})`, `compression()`, `/submit` için `express-rate-limit` (60sn’de max 15 istek).
+> CORS’u konfigüre et: şimdilik `origin: '*'`, ama `{{myPublicUrl}}` listeye kolayca eklenebilir olsun.
+> Acceptance: Başlıklar güvenli; sık istek denemeleri kısıtlanır; uygulama davranışı değişmez.
+
+---
+
+# 10) Meta/OG ve favicon
+
+**Prompt:**
+
+> Files: `index.html` (head).
+> Add:
+>
+> ```
+> <title>Love | Mini Anket</title>
+> <meta name="description" content="Kısa bir soruyla başlayan romantik deneyim 💖">
+> <meta property="og:title" content="Love">
+> <meta property="og:description" content="Kısa bir soruyla başlayan romantik deneyim 💖">
+> <meta property="og:image" content="/og-cover.jpg"> <!-- 1200x630 -->
+> <link rel="icon" href="/favicon.svg">
+> ```
+>
+> Acceptance: Paylaşım önizlemelerinde başlık, açıklama, görsel görülür.
+
+---
+
+# 11) Telefon alanı maskeleme (isteğe bağlı)
+
+**Prompt:**
+
+> Files: `index.html`, `app.js`.
+> Telefon input: `inputmode="numeric"`, `maxlength="14"`, placeholder `05xx xxx xx xx`.
+> JS ile yazdıkça otomatik formatla (boşluklar). Serbest geri silme çalışsın.
+> Acceptance: Kullanıcı 11 rakam girince biçim `05xx xxx xx xx`.
+
+---
+
+# 12) Hata mesajları ve log kalitesi
+
+**Prompt:**
+
+> Files: `app.js`, `server.js`.
+> Frontend fetch hatasında kullanıcıya “Ağ hatası” toast’ı göster.
+> Backend’de Telegram POST timeout `10s`; loglar kısa ve anlamlı (`console.warn/error`).
+> Acceptance: Sorunlar kullanıcıya nazikçe bildirilir; konsolda tek satır net özet log görünür.
+
+---
+
+## Bonus – CORS’a yayın URL’sini ekleme
+
+**Prompt:**
+
+> Files: `server.js`.
+> CORS origin’ini `['{{myPublicUrl}}', 'http://localhost:3000']` şeklinde ayarla; `{{myPublicUrl}}` boşsa default `*`.
+> Acceptance: Yerelde ve yayında çalışır; gerektiğinde origin listesine yenisi kolay eklenir.
+
+---
+
+## Bonus – QR oluşturma (komut)
+
+**Prompt (Terminal komutu):**
+
+> `npx qrcode-terminal {{myPublicUrl}}`
+> Acceptance: Terminalde taranabilir QR çıkar.
+
+---
+
+İstersen “tek prompt” halinde **1–5 maddeyi** birleştirip tek seferde uygulatan sürümü de yazabilirim. Ayrıca `{{myPublicUrl}}` yerine ngrok/Cloudflare tünel adresini koymayı unutma.
